@@ -2,14 +2,11 @@ import { connect } from "mongoose"
 
 const connectDB = async () => {
 	try {
-		await connect(process.env.MONGO_URI, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		})
+		await connect(process.env.MONGO_URL)
 		console.log("MongoDB Connected...")
 	} catch (error) {
-		console.error("MongoDB connection error:", error)
-		process.exit(1) 
+		console.error("MongoDB connection error:", error.message) 
+		process.exit(1)
 	}
 }
 

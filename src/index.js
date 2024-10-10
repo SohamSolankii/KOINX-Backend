@@ -9,6 +9,11 @@ dotenv.config()
 
 const app = express()
 
+app.use(express.json())
+	.use(express.urlencoded({ extended: true }))
+	
+
+
 // Schedule background job to run every 2 hours
 schedule("0 */2 * * *", () => {
 	console.log("Running scheduled job: Fetching crypto data...")

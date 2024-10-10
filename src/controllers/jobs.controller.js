@@ -9,9 +9,8 @@ const fetchCryptoData = async () => {
 			"https://api.coingecko.com/api/v3/coins/markets",
 			{
 				params: {
-					vs_currency: "usd", // Fetch prices in USD
-					ids: "bitcoin,ethereum,matic-network", // IDs for the cryptocurrencies
-					x_cg_demo_api_key: process.env.COINGECKO_API_KEY, // Optional: Use API key if needed
+					vs_currency: "usd", 
+					ids: "bitcoin,ethereum,matic-network",
 				},
 			}
 		)
