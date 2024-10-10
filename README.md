@@ -30,7 +30,7 @@
 
 5. Finally start the server by typing the following command:
     ```
-    node run dev
+    npm run dev
     ```
 ## Usage
 
