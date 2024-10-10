@@ -72,8 +72,3 @@ Fetches all available API and updates the database.
     {
     	"coin":"bitcoin"
     }
-
-    
-
-
-
